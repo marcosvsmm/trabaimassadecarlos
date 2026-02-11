@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa dos Sonhos</title>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+    <style>
+
+        *  {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: rgb(0, 0, 0);
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+#particles-js {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: black;
+  z-index: -1; /* fica atrás de tudo */
+}
+
+
+        h1 {
+            position: absolute;
+            z-index: 999;
+            color: white;
+            left:38.5%;
+            margin-top: 30px;
+    font-family: 'Sacramento', cursive;
+    font-size: 3.2rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+        text-shadow: 0 0 8px rgba(255,255,255,0.15);
+        }
+
+img {
+    border-radius: 10000px;
+    width: 200px;
+    height: 150px;
+    padding: 50px;
+    position: relative;
+    top: 130px;
+    left: 70px;
+    transition: transform 2s ease;
+
+}
+
+img.yas {
+    width: 220px;
+    height: 170px;
+    z-index: 999;
+    top: 90px;
+}
+
+.yas:hover {
+    border-radius: 70px;
+    content: url('partedeyasmin_tcarlos.JPG');
+    transform: scale(3.3) translateX(140px) translateY(50px);
+    z-index: 9999;
+    
+}
+
+img.eu {
+    width: 200px;
+    height: 170px;
+    top: 115px;
+}
+
+.eu:hover {
+    height: 170px;
+    width: 240px;
+    border-radius: 70px;
+    content: url('partedeeu_tcarlos.JPG');
+    transform: scale(3.3) translateX(40px) translateY(50px);
+    z-index: 9999;
+    
+}
+
+img.wellyson {
+    width: 240px;
+    height: 190px;
+    top: 165px;
+}
+
+.wellyson:hover {
+    border-radius: 70px;
+    content: url('partedewellyson_tcarlos.jpg');
+    transform: scale(3.3) translateX(-50px) translateY(35px);
+    z-index: 9999;
+    
+}
+
+img.luiz {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 125px;
+    left: 1000px;
+}
+
+.luiz:hover {
+    width: 240px;
+    height: 170px;
+    border-radius: 70px;
+    content: url('partedeluiz_tcarloss.JPG');
+    transform: scale(3.3) translateX(-140px) translateY(50px);
+    z-index: 9999;
+    
+}
+
+
+img.kleber {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 460px;
+}
+
+.kleber:hover {
+    height: 170px;
+    width: 230px;
+    border-radius: 70px;
+    content: url('partedekleber_tcarlos.JPG');
+    transform: scale(3.3) translateX(140px) translateY(-60px);
+    z-index: 9999;
+    
+}
+
+img.daviv {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 450px;
+    left: 400px;
+}
+
+.daviv:hover {
+    height: 150px;
+    width: 230px;
+    border-radius: 70px;
+    content: url('partededaviv_tcarlos.JPG');
+    transform: scale(3.3) translateX(40px) translateY(-40.1px);
+    z-index: 9999;
+    
+}
+
+img.mighel {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    top: 465px;
+    left: 700px;
+}
+
+.mighel:hover {
+    height: 170px;
+    width: 240px;
+    border-radius: 70px;
+    content: url('partedemighel_tcarlos.JPG');
+    transform: scale(3.3) translateX(-50px) translateY(-50px);
+    z-index: 9999;
+    
+}
+
+img.lara {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 450px;
+    left: 1000px;
+}
+
+.lara:hover {
+    height: 150px;
+    width: 230px;
+    border-radius: 70px;
+    content: url('partedelara_tcarlos.JPG');
+    transform: scale(3.3) translateX(-140px) translateY(-40.1px);
+    z-index: 9999;
+    
+}
+
+    </style>
+</head>
+
+
+<body>
+        <div id="particles-js"></div>
+
+<h1>Mapa dos Sonhos</h1>
+
+<img src="WhatsApp Image 2026-02-06 at 21.41.40.jpeg" alt="" class="yas">
+<img src="WhatsApp Image 2026-02-06 at 22.41.14.jpeg" alt="" class="eu">
+<img src="WhatsApp Image 2026-02-08 at 08.56.42.jpeg" alt="" class="wellyson">
+<img src="WhatsApp Image 2026-02-08 at 11.03.37.jpeg" alt="" class="luiz">
+<br>
+<img src="WhatsApp Image 2026-02-08 at 09.08.36.jpeg" alt="" class="kleber">
+<img src="WhatsApp Image 2026-02-06 at 21.03.30.jpeg" alt="" class="daviv">
+<img src="fotojmighel.jpg" alt="" class="mighel">
+<img src="WhatsApp Image 2026-02-08 at 13.12.38.jpeg" alt="" class="lara">
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 350 },
+    "size": { "value": 4 },
+    "move": { "speed": 1 },
+    "line_linked": { "enable": false },
+    "opacity": { "value": 0.2, "random": true }
+  }
+});
+</script>
+</body>
+
+
+
+</html>
